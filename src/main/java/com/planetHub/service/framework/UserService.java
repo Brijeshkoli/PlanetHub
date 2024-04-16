@@ -7,16 +7,6 @@ import org.springframework.stereotype.Component;
 
 import com.planetHub.entity.User;
 
-/**
- * Created by IntelliJ IDEA.
- * Project : spring-boot-reset-password
- * User: hendisantika
- * Email: hendisantika@gmail.com
- * Telegram : @hendisantika34
- * Date: 12/04/22
- * Time: 08.39
- */
-
 public interface UserService extends UserDetailsService {
     User findByEmail(String email);
 

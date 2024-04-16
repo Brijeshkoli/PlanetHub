@@ -10,16 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-/**
- * Created by IntelliJ IDEA.
- * Project : spring-boot-reset-password
- * User: hendisantika
- * Email: hendisantika@gmail.com
- * Telegram : @hendisantika34
- * Date: 12/04/22
- * Time: 08.34
- */
 @Data
 @Entity
 @NoArgsConstructor
