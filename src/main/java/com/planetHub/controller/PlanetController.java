@@ -45,13 +45,13 @@ public class PlanetController {
   @PutMapping(value = "/{id}")
   public Planet updatePlanet(@PathVariable("id") @Min(1) Long id, @Valid @RequestBody Planet newStd) {
 
-    Planet student = planetService.findById(id)
+    Planet planetdata = planetService.findById(id)
         .orElseThrow(() -> new PlanetNotFoundException("Planet with " + id + " is not found!"));
 
-    student.setTitle(newStd.getTitle());
-    student.setDescription(newStd.getDescription());
+        planetdata.setTitle(newStd.getTitle());
+        planetdata.setDescription(newStd.getDescription());
 
-    return planetService.save(student);
+    return planetService.save(planetdata);
   }
 
   @DeleteMapping(value = "/{id}")
